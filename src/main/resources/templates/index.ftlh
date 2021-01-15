@@ -99,6 +99,7 @@
             $.ajax({
                 url: url,
                 success: function(result) {
+                    $("#content").html(result);
                     const time = (new Date() - start) / 1000;
                     log(result + " (in " + time + " seconds)", requestId);
                     counter = result;
@@ -114,6 +115,7 @@
             $.ajax({
                 url: url,
                 success: function(result) {
+                    $("#content").html(result);
                     const time = (new Date() - start) / 1000;
                     log(result + " (in " + time + " seconds)", requestId);
                     counter = result;
